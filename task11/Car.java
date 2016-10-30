@@ -1,21 +1,21 @@
 /**
  * Describes a moving of car
  * 
- * @version 1.0
+ * @version 1.1
  * @author shukal
  */
 public class Car implements Movable {
-	private double fuelCost = 0.5;
+	private final double FUEL_COST = 0.5;
 	private double distance = 0;
 	private Point currentPoint;
 	private Point startPoint;
-	private int numberOfPassengers = 4;
+	private final int NUMBER_OF_PASSENGERS = 4;
 	/** Speed in km/h */
-	private double speed = 120;
+	private final double SPEED = 120;
 	/**
 	 * Fuel consumption liter/100 km
 	 */
-	private double fuelConsumption = 6.5;
+	private final double FUEL_CONSUMPTION = 6.5;
 
 	/**
 	 * Sets the start point
@@ -36,12 +36,9 @@ public class Car implements Movable {
 		currentPoint = nextPoint;
 	}
 	
-	/**
-	 * @return time of moving
-	 */
 	@Override
 	public double getTime() {
-		return distance / speed;
+		return distance / SPEED;
 	}
 	
 	/**
@@ -50,12 +47,9 @@ public class Car implements Movable {
 	 */
 	@Override
 	public double getCost() {
-	    return distance * fuelCost * fuelConsumption / 100 * numberOfPassengers;
+	    return distance * FUEL_COST * FUEL_CONSUMPTION / 100 * NUMBER_OF_PASSENGERS;
 	}
 	
-	/**
-	 * @return name of vehicle
-	 */
 	@Override
 	public String getName() {
 		return "Traveling by a car";

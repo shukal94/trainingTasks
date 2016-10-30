@@ -17,15 +17,18 @@ public class Main {
 
 		try {
 			checkpointsList = builder.buildRoute(routeFile);
-		} catch (IOException e) {
+		}	catch(BadRouteException e) {
+			System.out.println(e.getMessage());
+			System.exit(1);
+		}	catch (IOException e) {
 			System.out.println("I/O error occurred, can't read the file");
 			System.exit(1);
 		}
 
-		TravelBuilder travelBuilder =
-				new TravelBuilder().add(new Bicycle()).add(new Walker()).add(new Car()).add(new Bus());
+		TravelStatProvider travelStatProvider =
+				new TravelStatProvider().add(new Bicycle()).add(new Walker()).add(new Car()).add(new Bus());
 
-		travelBuilder.goOnRoute(checkpointsList);
-		travelBuilder.getStatistics();
+		travelStatProvider.goOnRoute(checkpointsList);
+		travelStatProvider.getStatistics();
 	}
 }

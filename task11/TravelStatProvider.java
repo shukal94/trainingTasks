@@ -2,8 +2,11 @@ import java.util.ArrayList;
 
 /**
  * Class that performs the travel along the route and prints out the needed statistics about the travel
+ * 
+ * @version 1.1
+ * @author shukal
  */
-public class TravelBuilder {
+public class TravelStatProvider {
 	ArrayList<Movable> vehicles = new ArrayList<>();
 
 	/**
@@ -12,7 +15,7 @@ public class TravelBuilder {
 	 * @param traveller vehicle to add
 	 * @return this object
 	 */
-	public TravelBuilder add(Movable vehicle) {
+	public TravelStatProvider add(Movable vehicle) {
 		vehicles.add(vehicle);
 		return this;
 	}

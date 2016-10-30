@@ -1,11 +1,11 @@
 /**
  * Describes a moving of walker
  * 
- * @version 1.0
+ * @version 1.1
  * @author shukal
  */
 public class Walker implements Movable {
-	private double speed = 3.5;
+	private final double speed = 3.5;
 	private double distance = 0;
 	private Point currentPoint;
 	private Point startPoint;
@@ -29,25 +29,16 @@ public class Walker implements Movable {
 		currentPoint = nextPoint;
 	}
 	
-	/**
-	 * @return time of moving
-	 */
 	@Override
 	public double getTime() {
 		return distance / speed;
 	}
 
-	/**
-	 * @return cost of moving
-	 */
 	@Override
 	public double getCost() {
 		return 0;
 	}
 
-	/**
-	 * @return name of vehicle
-	 */
 	@Override
 	public String getName() {
 		return "Traveling by walk on";

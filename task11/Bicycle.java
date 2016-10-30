@@ -1,7 +1,7 @@
 /**
  * Describes a moving of bicycle
  * 
- * @version 1.0
+ * @version 1.1
  * @author shukal
  */
 public class Bicycle implements Movable {
@@ -9,7 +9,7 @@ public class Bicycle implements Movable {
 	private Point currentPoint;
 	private Point startPoint;
 	/** Speed in km/h */
-	private double speed = 20;
+	private final double SPEED = 20;
 	
 	/**
 	 * Sets the start point
@@ -30,26 +30,16 @@ public class Bicycle implements Movable {
 		currentPoint = nextPoint;
 	}
 	
-	/**
-	 * @return time of moving
-	 */
 	@Override
 	public double getTime() {
-		return distance / speed;
+		return distance / SPEED;
 	}
 	
-	/**
-	 * Calculates travel cost and divides it by the number of passengers
-	 * @return travel cost for a single passenger
-	 */
 	@Override
 	public double getCost() {
 	    return 0;
 	}
 	
-	/**
-	 * @return name of vehicle
-	 */
 	@Override
 	public String getName() {
 		return "Traveling by bike-tour";

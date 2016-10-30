@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 /**
  * Builds a route from a checkpoints
- * @version 1.0
+ * @version 1.1
  * @author shukal
  */
 public class RouteBuilder {
@@ -14,11 +14,12 @@ public class RouteBuilder {
 	
 	/**
 	 * Builds a route from checkpoints in the file
-	 * @param fileName - file where checkpoints are contains
+	 * @param checkpointFile - file where checkpoints are contains
 	 * @throws IOException - if IO error occurs
+	 * @throws BadRouteException - if route is invalid
 	 * @return a route
 	 */
-	public ArrayList<Point> buildRoute(File checkpointFile) throws IOException {
+	public ArrayList<Point> buildRoute(File checkpointFile) throws IOException, BadRouteException {
 		BufferedReader reader = new BufferedReader(new FileReader(checkpointFile));
 		String currentLine;
 	    while (((currentLine = reader.readLine()) != null)) {
@@ -41,7 +42,7 @@ public class RouteBuilder {
 	    }
 	    if (route.size() < 2 || route.get(0)
 	    		.equals(route.get(route.size() - 1))) {
-	   	   System.exit(0);
+	    	throw new BadRouteException();
 	    }
 		return route;
 	}

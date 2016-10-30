@@ -1,21 +1,22 @@
 /**
  * Describes a moving of bus
  * 
- * @version 1.0
+ * @version 1.1
  * @author shukal
  */
 public class Bus implements Movable {
-	private double fuelCost = 0.6;
+	/** Fuel cost in USD */
+	private final double FUEL_COST = 0.6;
 	private double distance = 0;
 	private Point currentPoint;
 	private Point startPoint;
-	private int numberOfPassengers = 15;
+	private final int NUMBER_OF_PASSENGERS = 15;
 	/** Speed in km/h */
-	private double speed = 50;
+	private final double SPEED = 50;
 	/**
 	 * Fuel consumption liter/100 km
 	 */
-	private double fuelConsumption = 25;
+	private final double FUEL_CONSUMPTION = 25;
 
 	/**
 	 * Sets the start point
@@ -36,12 +37,9 @@ public class Bus implements Movable {
 		currentPoint = nextPoint;
 	}
 	
-	/**
-	 * @return time of moving
-	 */
 	@Override
 	public double getTime() {
-		return distance / speed;
+		return distance / SPEED;
 	}
 	
 	/**
@@ -50,12 +48,9 @@ public class Bus implements Movable {
 	 */
 	@Override
 	public double getCost() {
-	    return distance * fuelCost * fuelConsumption / 100 * numberOfPassengers;
+	    return distance * FUEL_COST * FUEL_CONSUMPTION / 100 * NUMBER_OF_PASSENGERS;
 	}
 	
-	/**
-	 * @return name of vehicle
-	 */
 	@Override
 	public String getName() {
 		return "Traveling by bus";
