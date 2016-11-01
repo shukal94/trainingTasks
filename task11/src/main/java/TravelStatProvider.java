@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * @author shukal
  */
 public class TravelStatProvider {
-	ArrayList<Movable> vehicles = new ArrayList<>();
+	ArrayList<Movable> vehicles = new ArrayList<Movable>();
 
 	/**
 	 * Adds a vehicle to list
@@ -31,7 +31,11 @@ public class TravelStatProvider {
 		}
 		for (int i = 1; i < route.size(); i++) {
 			for (Movable t : vehicles) {
-				t.move(route.get(i));
+				try {
+					t.move(route.get(i));
+				}	catch(OutOfDoubleException ex) {
+					break;
+				}
 			}
 		}
 	}

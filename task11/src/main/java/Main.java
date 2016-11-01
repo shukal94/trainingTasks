@@ -13,7 +13,7 @@ public class Main {
 	public static void main(String[] args) {
 		RouteBuilder builder = new RouteBuilder();
 		File routeFile = new File("points.txt");
-		ArrayList<Point> checkpointsList = new ArrayList<>();
+		ArrayList<Point> checkpointsList = new ArrayList<Point>();
 
 		try {
 			checkpointsList = builder.buildRoute(routeFile);

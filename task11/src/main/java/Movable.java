@@ -15,7 +15,7 @@ public interface Movable {
 	 * Moves an object along the route from a starting point
 	 * @param pt - next point
 	 */
-	void move(Point pt);
+	void move(Point pt) throws OutOfDoubleException;
 	
 	/**
 	 * @return time of moving

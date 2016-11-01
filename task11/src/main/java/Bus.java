@@ -48,7 +48,7 @@ public class Bus implements Movable {
 	 */
 	@Override
 	public double getCost() {
-	    return distance * FUEL_COST * FUEL_CONSUMPTION / 100 * NUMBER_OF_PASSENGERS;
+		return distance * FUEL_COST * FUEL_CONSUMPTION / 100 * NUMBER_OF_PASSENGERS;
 	}
 	
 	@Override

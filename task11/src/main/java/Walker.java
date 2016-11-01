@@ -1,15 +1,14 @@
 /**
- * Describes a moving of bicycle
+ * Describes a moving of walker
  * 
  * @version 1.1
  * @author shukal
  */
-public class Bicycle implements Movable {
+public class Walker implements Movable {
+	private final double speed = 3.5;
 	private double distance = 0;
 	private Point currentPoint;
 	private Point startPoint;
-	/** Speed in km/h */
-	private final double SPEED = 20;
 	
 	/**
 	 * Sets the start point
@@ -23,25 +22,29 @@ public class Bicycle implements Movable {
 	/**
 	 * Moves an object along the route from a starting point
 	 * @param pt - starting point
+	 * @throws OutOfDoubleException 
 	 */
 	@Override
-	public void move(Point nextPoint) {
+	public void move(Point nextPoint) throws OutOfDoubleException {
 		distance += currentPoint.getDistanceBetweenPoints(nextPoint);
+		if (distance >= Double.MAX_VALUE) {
+			throw new OutOfDoubleException();
+		}
 		currentPoint = nextPoint;
 	}
 	
 	@Override
 	public double getTime() {
-		return distance / SPEED;
+		return distance / speed;
 	}
-	
+
 	@Override
 	public double getCost() {
-	    return 0;
+		return 0;
 	}
-	
+
 	@Override
 	public String getName() {
-		return "Traveling by bike-tour";
+		return "Traveling by walk on";
 	}
 }
