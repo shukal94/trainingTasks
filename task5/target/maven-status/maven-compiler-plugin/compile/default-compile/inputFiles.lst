@@ -1,0 +1,6 @@
+/home/shukal/IdeaProjects/task5/src/main/java/com/epam/training/tat/task05/Main.java
+/home/shukal/IdeaProjects/task5/src/main/java/com/epam/training/tat/task05/checker/TriangleChecker.java
+/home/shukal/IdeaProjects/task5/src/main/java/com/epam/training/tat/task05/exceptions/NotATriangleException.java
+/home/shukal/IdeaProjects/task5/src/main/java/com/epam/training/tat/task05/content/Triangle.java
+/home/shukal/IdeaProjects/task5/src/main/java/com/epam/training/tat/task05/exceptions/NotThreeSidesException.java
+/home/shukal/IdeaProjects/task5/src/main/java/com/epam/training/tat/task05/exceptions/ZeroException.java
