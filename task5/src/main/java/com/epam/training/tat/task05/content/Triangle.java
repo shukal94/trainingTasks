@@ -14,6 +14,8 @@ public class Triangle {
     private double b;
     private double c;
 
+    private String type;
+
     /**
      * Creates a triangle
      *
@@ -31,6 +33,21 @@ public class Triangle {
             System.out.print("format of input data is wrong");
             ex.printStackTrace();
         }
+    }
+
+    /**
+     *
+     * @param type of the triangle
+     */
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    /**
+     * @return type of the triangle
+     */
+    public String getType() {
+        return type;
     }
 
     /**

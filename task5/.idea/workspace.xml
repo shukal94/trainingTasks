@@ -35,9 +35,14 @@
       <file leaf-file-name="Triangle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/content/Triangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="341">
+              <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+              <folding>
+                <element signature="e#1066#1067#0" expanded="true" />
+                <element signature="e#1098#1099#0" expanded="true" />
+                <element signature="e#1181#1182#0" expanded="true" />
+                <element signature="e#1208#1209#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,8 +50,8 @@
       <file leaf-file-name="TriangleChecker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/checker/TriangleChecker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+            <state relative-caret-position="362">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -55,8 +60,8 @@
       <file leaf-file-name="TriangleCheckerTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/training/tat/task05/checker/TriangleCheckerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="171" column="1" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="1" />
+            <state relative-caret-position="432">
+              <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZeroException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/exceptions/ZeroException.java">
+      <file leaf-file-name="data.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            <state relative-caret-position="54">
+              <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -77,12 +82,10 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+            <state relative-caret-position="20">
+              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2423#2424#0" expanded="true" />
-                <element signature="e#2462#2463#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,9 +104,12 @@
       <file leaf-file-name="NotATriangleException.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/exceptions/NotATriangleException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="180">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="36" />
+              <folding>
+                <element signature="e#256#257#0" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,12 +133,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/exceptions/NotATriangleException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/content/Triangle.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/exceptions/ZeroException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/checker/TriangleChecker.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/exceptions/NotThreeSidesException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/content/Triangle.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/epam/training/tat/task05/checker/TriangleCheckerTest1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/Main.java" />
+        <option value="$PROJECT_DIR$/data.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/checker/TriangleChecker.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/epam/training/tat/task05/checker/TriangleCheckerTest.java" />
       </list>
     </option>
@@ -180,9 +188,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -407,6 +415,101 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="false" name="TriangleCheckerTest.negativeTestForEquilateralTriangle" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="task5" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.epam.training.tat.task05.checker" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.training.tat.task05.checker.TriangleCheckerTest" />
+      <option name="METHOD_NAME" value="negativeTestForEquilateralTriangle" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.epam.training.tat.task05.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="task5" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="TriangleCheckerTest.negativeTestForIsoscelesTriangle" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="task5" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.epam.training.tat.task05.checker" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.training.tat.task05.checker.TriangleCheckerTest" />
+      <option name="METHOD_NAME" value="negativeTestForIsoscelesTriangle" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="TriangleCheckerTest.positiveTestForRegularTriangle" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="task5" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.epam.training.tat.task05.checker" />
+      <option name="MAIN_CLASS_NAME" value="com.epam.training.tat.task05.checker.TriangleCheckerTest" />
+      <option name="METHOD_NAME" value="positiveTestForRegularTriangle" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -589,12 +692,20 @@
       <listeners />
       <method />
     </configuration>
-    <list size="1">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="TestNG.TriangleCheckerTest" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.TriangleCheckerTest.negativeTestForEquilateralTriangle" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.TriangleCheckerTest.negativeTestForIsoscelesTriangle" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.TriangleCheckerTest.positiveTestForRegularTriangle" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="TestNG.TriangleCheckerTest" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.TriangleCheckerTest.positiveTestForRegularTriangle" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.TriangleCheckerTest.negativeTestForIsoscelesTriangle" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.TriangleCheckerTest.negativeTestForEquilateralTriangle" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
@@ -615,14 +726,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TriangleCheckerTest - 2016.11.06 at 23h 55m 52s.xml">
+    <history-entry file="TriangleCheckerTest - 2016.11.10 at 15h 55m 43s.xml">
       <configuration name="TriangleCheckerTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TriangleCheckerTest - 2016.11.06 at 23h 56m 55s.xml">
+    <history-entry file="TriangleCheckerTest - 2016.11.10 at 15h 57m 02s.xml">
       <configuration name="TriangleCheckerTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TriangleCheckerTest - 2016.11.07 at 00h 20m 16s.xml">
+    <history-entry file="TriangleCheckerTest - 2016.11.10 at 15h 59m 40s.xml">
       <configuration name="TriangleCheckerTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TriangleCheckerTest - 2016.11.10 at 16h 10m 25s.xml">
+      <configuration name="TriangleCheckerTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TriangleCheckerTest - 2016.11.10 at 16h 14m 23s.xml">
+      <configuration name="TriangleCheckerTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TriangleCheckerTest_positiveTestForRegularTriangle - 2016.11.10 at 15h 58m 45s.xml">
+      <configuration name="TriangleCheckerTest.positiveTestForRegularTriangle" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TriangleCheckerTest_positiveTestForRegularTriangle - 2016.11.10 at 16h 00m 50s.xml">
+      <configuration name="TriangleCheckerTest.positiveTestForRegularTriangle" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TriangleCheckerTest_positiveTestForRegularTriangle - 2016.11.10 at 16h 01m 57s.xml">
+      <configuration name="TriangleCheckerTest.positiveTestForRegularTriangle" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TriangleCheckerTest_positiveTestForRegularTriangle - 2016.11.10 at 16h 03m 49s.xml">
+      <configuration name="TriangleCheckerTest.positiveTestForRegularTriangle" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TriangleCheckerTest_positiveTestForRegularTriangle - 2016.11.10 at 16h 05m 34s.xml">
+      <configuration name="TriangleCheckerTest.positiveTestForRegularTriangle" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -631,19 +763,19 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24967907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -665,7 +797,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -673,6 +807,35 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/content/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding>
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/checker/TriangleChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -685,7 +848,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -701,9 +869,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -711,7 +877,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -721,8 +890,6 @@
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2423#2424#0" expanded="true" />
-            <element signature="e#2462#2463#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -739,7 +906,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -755,7 +925,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -771,7 +946,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -781,8 +959,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2423#2424#0" expanded="true" />
-            <element signature="e#2462#2463#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -799,7 +975,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -815,7 +994,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -847,7 +1031,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
           <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -855,7 +1044,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -865,8 +1057,6 @@
           <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2423#2424#0" expanded="true" />
-            <element signature="e#2462#2463#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -883,7 +1073,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -899,7 +1092,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding />
+          <folding>
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -915,7 +1113,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -925,8 +1126,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2423#2424#0" expanded="true" />
-            <element signature="e#2462#2463#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -943,23 +1142,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/exceptions/NotATriangleException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/exceptions/ZeroException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -972,6 +1158,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/training/tat/task05/checker/TriangleCheckerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="20" selection-start-line="2" selection-start-column="0" selection-end-line="11" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/exceptions/NotATriangleException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/exceptions/ZeroException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/content/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+          <folding>
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/exceptions/NotThreeSidesException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -980,38 +1219,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/checker/TriangleChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+        <state relative-caret-position="362">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/content/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/epam/training/tat/task05/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2423#2424#0" expanded="true" />
-            <element signature="e#2462#2463#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/epam/training/tat/task05/checker/TriangleCheckerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="171" column="1" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="1" />
+        <state relative-caret-position="432">
+          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
