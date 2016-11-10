@@ -37,13 +37,9 @@ public class Main {
 
         TriangleChecker checker = new TriangleChecker();
 
-        if (checker.isEquilateral(jack)) {
-            System.out.println("Equilateral");
-        } else if (checker.isIsosceles(jack)) {
-            System.out.println("Isosceles");
-        } else {
-            System.out.println("ordinary");
-        }
+        checker.isIsosceles(jack);
+        checker.isEquilateral(jack);
+        checker.isRegular(jack);
     }
 
     /**

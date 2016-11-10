@@ -1,172 +1,145 @@
 package com.epam.training.tat.task05.checker;
 
-import com.epam.training.tat.task05.content.Triangle;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
 import static org.testng.Assert.*;
 
+import com.epam.training.tat.task05.content.Triangle;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.NodeList;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import java.io.File;
+
 /**
- * Checks the comparing operations
- *
- * @version
- * Created by shukal on 6.11.16.
+ * Created by shukal on 10.11.16.
  */
 public class TriangleCheckerTest {
-    private Triangle triangle;
-    private TriangleChecker checker = new TriangleChecker();
+    public static final String REGULAR = "regular";
+    public static final String ISOSCELES = "isosceles";
+    public static final String EQUILATERAL = "equilateral";
+    public static final String NEGATIVE = "negative";
+    public static final String SIDE_A = "side_a";
+    public static final String SIDE_B = "side_b";
+    public static final String SIDE_C = "side_c";
 
-    @Test
-    public void testIsIsosceles() {
-        triangle = new Triangle(2, 2, 3);
-        assertTrue(checker.isIsosceles(triangle));
+    @DataProvider(name = "Regular Triangle")
+    public Object[][] regularTriangle() throws Exception {
+        File inputFile = new File("data.xml");
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        Document document = builder.parse(inputFile);
+        NodeList nodeList = document.getElementsByTagName(REGULAR);
+        Object[][] result = new Object[nodeList.getLength()][];
+        for (int i = 0; i < nodeList.getLength(); i++) {
+            NamedNodeMap map = nodeList.item(i).getAttributes();
+            result[i] = new Object[]{
+                    Double.parseDouble(map.getNamedItem(SIDE_A).getNodeValue()),
+                    Double.parseDouble(map.getNamedItem(SIDE_B).getNodeValue()),
+                    Double.parseDouble(map.getNamedItem(SIDE_C).getNodeValue())
+            };
+        }
+        return result;
     }
 
-    @Test
-    public void testIsIsoscelesDoublePoint() {
-        triangle = new Triangle(2, 2.000000000001, 3);
-        assertTrue(checker.isIsosceles(triangle));
+    @Test(dataProvider = "Regular Triangle")
+    public void positiveTestForRegularTriangle(double a, double b, double c) {
+        String expected = "Regular";
+        Triangle triangle = new Triangle(a, b, c);
+        TriangleChecker checker = new TriangleChecker();
+
+        assertEquals(checker.isRegular(triangle), expected);
     }
 
-    @Test
-    public void testIsIsoscelesWithMaxValues() {
-        triangle = new Triangle(Double.MAX_VALUE, Double.MAX_VALUE, Double.MAX_VALUE - 3);
-        assertTrue(checker.isIsosceles(triangle));
+    @DataProvider(name = "Isosceles Triangle")
+    public Object[][] isoscelesTriangle() throws Exception {
+        File inputFile = new File("data.xml");
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        Document document = builder.parse(inputFile);
+        NodeList nodeList = document.getElementsByTagName(ISOSCELES);
+        Object[][] result = new Object[nodeList.getLength()][];
+        for (int i = 0; i < nodeList.getLength(); i++) {
+            NamedNodeMap map = nodeList.item(i).getAttributes();
+            result[i] = new Object[]{
+                    Double.parseDouble(map.getNamedItem(SIDE_A).getNodeValue()),
+                    Double.parseDouble(map.getNamedItem(SIDE_B).getNodeValue()),
+                    Double.parseDouble(map.getNamedItem(SIDE_C).getNodeValue())
+            };
+        }
+        return result;
     }
 
-    @Test
-    public void testIsIsoscelesWithNaNs() {
-        double c = 1.0/0;
-        triangle = new Triangle(2, 2, c);
-        assertTrue(checker.isIsosceles(triangle));
+    @Test(dataProvider = "Isosceles Triangle")
+    public void positiveTestForIsoscelesTriangle(double a, double b, double c) {
+        String expected = "Isosceles";
+        Triangle triangle = new Triangle(a, b, c);
+        TriangleChecker checker = new TriangleChecker();
+        assertEquals(checker.isIsosceles(triangle), expected);
     }
 
-    @Test
-    public void testIsIsoscelesWithMinValues() {
-        triangle = new Triangle(Double.MIN_VALUE, Double.MIN_VALUE, Double.MIN_VALUE - 3);
-        assertTrue(checker.isIsosceles(triangle));
+    @DataProvider(name = "Equilateral Triangle")
+    public Object[][] equilateralTriangle() throws Exception {
+        File inputFile = new File("data.xml");
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        Document document = builder.parse(inputFile);
+        NodeList nodeList = document.getElementsByTagName(EQUILATERAL);
+        Object[][] result = new Object[nodeList.getLength()][];
+        for (int i = 0; i < nodeList.getLength(); i++) {
+            NamedNodeMap map = nodeList.item(i).getAttributes();
+            result[i] = new Object[]{
+                    Double.parseDouble(map.getNamedItem(SIDE_A).getNodeValue()),
+                    Double.parseDouble(map.getNamedItem(SIDE_B).getNodeValue()),
+                    Double.parseDouble(map.getNamedItem(SIDE_C).getNodeValue())
+            };
+        }
+        return result;
     }
 
-    @Test
-    public void testIsoscelesWithPosInfinity() {
-        triangle = new Triangle(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY, Double.MIN_VALUE - 3);
-        assertTrue(checker.isIsosceles(triangle));
+    @Test(dataProvider = "Equilateral Triangle")
+    public void positiveTestForEquilateralTriangle(double a, double b, double c) {
+        String expected = "Equilateral";
+        Triangle triangle = new Triangle(a, b, c);
+        TriangleChecker checker = new TriangleChecker();
+        assertEquals(checker.isEquilateral(triangle), expected);
     }
 
-    @Test
-    public void testIsoscelesWithNegInfinity() {
-        triangle = new Triangle(Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY, Double.MIN_VALUE - 3);
-        assertTrue(checker.isIsosceles(triangle));
+    @DataProvider(name = "Invalid data")
+    public Object[][] invalid() throws Exception {
+        File inputFile = new File("data.xml");
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        Document document = builder.parse(inputFile);
+        NodeList nodeList = document.getElementsByTagName(NEGATIVE);
+        Object[][] result = new Object[nodeList.getLength()][];
+        for (int i = 0; i < nodeList.getLength(); i++) {
+            NamedNodeMap map = nodeList.item(i).getAttributes();
+            result[i] = new Object[]{
+                    Double.parseDouble(map.getNamedItem(SIDE_A).getNodeValue()),
+                    Double.parseDouble(map.getNamedItem(SIDE_B).getNodeValue()),
+                    Double.parseDouble(map.getNamedItem(SIDE_C).getNodeValue())
+            };
+        }
+        return result;
     }
 
-    @Test
-    public void testIsIsoscelesWithMathConst() {
-        triangle = new Triangle(Math.PI, Math.PI, 3);
-        assertTrue(checker.isIsosceles(triangle));
+    @Test(dataProvider = "Invalid data")
+    public void negativeTestForIsoscelesTriangle(double a, double b, double c) {
+        Triangle triangle = new Triangle(a, b, c);
+        TriangleChecker checker = new TriangleChecker();
+        String type = checker.isIsosceles(triangle);
+        assertFalse(equals(type));
     }
 
-    @Test
-    public void testIsIsoscelesWithNaturalFraction() {
-        triangle = new Triangle(6/3, 6/3, 3);
-        assertTrue(checker.isIsosceles(triangle));
-    }
-
-    @Test
-    public void testIsIsoscelesWithNaturalPeriodicFraction() {
-        triangle = new Triangle(10/3, 10/3, 3);
-        assertTrue(checker.isIsosceles(triangle));
-    }
-
-    @Test
-    public void testIsIsoscelesWithZero() {
-        triangle = new Triangle(0, 3, 3);
-        assertTrue(checker.isIsosceles(triangle));
-    }
-
-    @Test
-    public void testIsIsoscelesWithZeros() {
-        triangle = new Triangle(0, 0, 0);
-        assertTrue(checker.isIsosceles(triangle));
-    }
-
-    @Test
-    public void testIsIsoscelesWithNegValues() {
-        triangle = new Triangle(-2, -2, 1);
-        assertTrue(checker.isIsosceles(triangle));
-    }
-
-    @Test
-    public void testIsEquilateral() throws Exception {
-        triangle = new Triangle(2, 2, 2);
-        assertTrue(checker.isEquilateral(triangle));
-    }
-
-    @Test
-    public void testIsEquilateralDoublePoint() {
-        triangle = new Triangle(2, 2.000000000001, 2);
-        assertTrue(checker.isEquilateral(triangle));
-    }
-
-    @Test
-    public void testIsEquilateralWithMaxValues() {
-        triangle = new Triangle(Double.MAX_VALUE, Double.MAX_VALUE, Double.MAX_VALUE);
-        assertTrue(checker.isEquilateral(triangle));
-    }
-
-    @Test
-    public void testIsEquilateralWithMinValues() {
-        triangle = new Triangle(Double.MIN_VALUE, Double.MIN_VALUE, Double.MIN_VALUE);
-        assertTrue(checker.isEquilateral(triangle));
-    }
-
-    @Test
-    public void testIsEquilateralWithNaNs() {
-        double c = 1.0/0;
-        triangle = new Triangle(2, 2, c);
-        assertTrue(checker.isEquilateral(triangle));
-    }
-
-    @Test
-    public void testEquilateralWithPosInfinity() {
-        triangle = new Triangle(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY,
-                Double.POSITIVE_INFINITY);
-        assertTrue(checker.isEquilateral(triangle));
-    }
-
-    @Test
-    public void testEquilateralWithNegInfinity() {
-        triangle = new Triangle(Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY,
-                Double.NEGATIVE_INFINITY);
-        assertTrue(checker.isEquilateral(triangle));
-    }
-
-    @Test
-    public void testIsEquilateralWithMathConst() {
-        triangle = new Triangle(Math.PI, Math.PI, 22/7);
-        assertTrue(checker.isEquilateral(triangle));
-    }
-
-    @Test
-    public void testIsEquilateralWithNaturalFraction() {
-        triangle = new Triangle(6/3, 6/3, 6/3);
-        assertTrue(checker.isEquilateral(triangle));
-    }
-
-    @Test
-    public void testIsEquilateralWithNaturalPeriodicFraction() {
-        triangle = new Triangle(10/3, 10/3, 10/3);
-        assertTrue(checker.isEquilateral(triangle));
-    }
-
-    @Test
-    public void testIsEquilateralWithZeros() {
-        triangle = new Triangle(0, 0, 0);
-        assertTrue(checker.isEquilateral(triangle));
-    }
-
-    @Test
-    public void testIsEquilateralWithNegValues() {
-        triangle = new Triangle(-2, -2, -2);
-        assertTrue(checker.isEquilateral(triangle));
+    @Test(dataProvider = "Invalid data")
+    public void negativeTestForEquilateralTriangle(double a, double b, double c) {
+        Triangle triangle = new Triangle(a, b, c);
+        TriangleChecker checker = new TriangleChecker();
+        String type = checker.isEquilateral(triangle);
+        assertFalse(equals(type));
     }
 }
