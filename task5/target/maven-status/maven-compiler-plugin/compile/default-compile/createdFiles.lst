@@ -1,0 +1,6 @@
+com/epam/training/tat/task05/Main.class
+com/epam/training/tat/task05/checker/TriangleChecker.class
+com/epam/training/tat/task05/exceptions/ZeroException.class
+com/epam/training/tat/task05/exceptions/NotATriangleException.class
+com/epam/training/tat/task05/exceptions/NotThreeSidesException.class
+com/epam/training/tat/task05/content/Triangle.class
