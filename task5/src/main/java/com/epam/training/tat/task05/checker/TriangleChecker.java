@@ -9,21 +9,42 @@ import com.epam.training.tat.task05.content.Triangle;
  * Created by shukal on 5.11.16.
  */
 public class TriangleChecker {
+
+    /**
+     * Checks on regularity of the triangle
+     * @return type
+     */
+    public String isRegular(Triangle john) {
+        String type = "";
+        if (john.getA() != john.getB() && john.getB() != john.getC()
+                && john.getA() != john.getC()) {
+            System.out.println("Regular");
+        }
+        return "Regular";
+    }
+
     /**
      * Checks on isoscelivity of the triangle
-     * @return true if isosceles
+     * @return type
      */
-    public boolean isIsosceles(Triangle john) {
-        return (john.getA() == john.getB() || john.getB() ==
-                john.getC() || john.getA() == john.getC());
+    public String isIsosceles(Triangle john) {
+        if ((john.getA() == john.getB() && john.getA() != john.getC() && john.getB() != john.getC()) ||
+                (john.getA() != john.getB() && john.getA() == john.getC() && john.getB() != john.getC()) ||
+                (john.getA() != john.getB() && john.getA() != john.getC() && john.getB() == john.getC())) {
+            System.out.println("Isosceles");
+        }
+        return "Isosceles";
     }
 
     /**
      * Checks on equilaterality of the triangle
-     * @return true if equilateral
+     * @return type
      */
-    public boolean isEquilateral(Triangle john) {
-        return (john.getA() == john.getB() && john.getB() ==
-                john.getC() && john.getA() == john.getC());
+    public String isEquilateral(Triangle john) {
+        if (john.getA() == john.getB() && john.getB() ==
+                john.getC() && john.getA() == john.getC()) {
+            System.out.println("Equilateral");
+        }
+        return "Equilateral";
     }
 }
