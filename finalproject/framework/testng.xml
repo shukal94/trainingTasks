@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Simple HTML-XML Suite">
+
+    <test name="Simple HTML-XML test">
+        <classes>
+            <class name="LoginTest" />
+            <class name="GuestActionsTest" />
+            <class name="AdminActionsTest" />
+        </classes>
+    </test>
+</suite>
