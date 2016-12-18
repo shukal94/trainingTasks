@@ -31,121 +31,17 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">7</td><td class="numi">7</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">119.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">8</td><td class="numi">8</td><td class="numi">0</td><td class="numi">0</td><td class="numi">87.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Surefire test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="3">AdminActionsTest</td><td><a href="#m1"><b>doSearchNegative</b>  </a></td><td class="numi">1</td><td>1481996515540</td><td class="numi">10954</td></tr><tr class="failedodd"><td><a href="#m2"><b>writeCommentNegative</b>  </a></td><td class="numi">1</td><td>1481996543294</td><td class="numi">11195</td></tr><tr class="failedodd"><td><a href="#m3"><b>writePostNegative</b>  </a></td><td class="numi">1</td><td>1481996571806</td><td class="numi">11053</td></tr>
 <tr><th colspan="4">Surefire test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="3">AdminActionsTest</td><td><a href="#m4"><b>doSearchPositive</b>  </a></td><td class="numi">1</td><td>1481996532970</td><td class="numi">3433</td></tr><tr class="passedodd"><td><a href="#m5"><b>writeCommentPositive</b>  </a></td><td class="numi">1</td><td>1481996560841</td><td class="numi">4218</td></tr><tr class="passedodd"><td><a href="#m6"><b>writePostPositive</b>  </a></td><td class="numi">1</td><td>1481996589451</td><td class="numi">5779</td></tr>
-<tr class="passedeven"><td rowspan="2">GuestActionsTest</td><td><a href="#m7"><b>doSearch</b>  </a></td><td class="numi">1</td><td>1481996602583</td><td class="numi">1458</td></tr><tr class="passedeven"><td><a href="#m8"><b>writeComment</b>  </a></td><td class="numi">1</td><td>1481996611359</td><td class="numi">1024</td></tr>
-<tr class="passedodd"><td rowspan="2">LoginTest</td><td><a href="#m9"><b>tryToLoginNegative</b>  </a></td><td class="numi">1</td><td>1481996618845</td><td class="numi">908</td></tr><tr class="passedodd"><td><a href="#m10"><b>tryToLoginPositive</b>  </a></td><td class="numi">1</td><td>1481996626274</td><td class="numi">983</td></tr>
+<tr class="passedodd"><td rowspan="3">AdminActionsTest</td><td><a href="#m1"><b>doSearch</b>  </a></td><td class="numi">1</td><td>1482084873774</td><td class="numi">4139</td></tr><tr class="passedodd"><td><a href="#m2"><b>writeComment</b>  </a></td><td class="numi">1</td><td>1482084885148</td><td class="numi">4745</td></tr><tr class="passedodd"><td><a href="#m3"><b>writePost</b>  </a></td><td class="numi">1</td><td>1482084897973</td><td class="numi">8419</td></tr>
+<tr class="passedeven"><td rowspan="2">GuestActionsTest</td><td><a href="#m4"><b>doSearch</b>  </a></td><td class="numi">1</td><td>1482084914374</td><td class="numi">1541</td></tr><tr class="passedeven"><td><a href="#m5"><b>writeComment</b>  </a></td><td class="numi">1</td><td>1482084923679</td><td class="numi">1230</td></tr>
+<tr class="passedodd"><td rowspan="3">LoginTest</td><td><a href="#m6"><b>tryToLoginNegative</b>  </a></td><td class="numi">1</td><td>1482084932219</td><td class="numi">1226</td></tr><tr class="passedodd"><td><a href="#m7"><b>tryToLoginPositive</b>  </a></td><td class="numi">1</td><td>1482084940358</td><td class="numi">2597</td></tr><tr class="passedodd"><td><a href="#m8"><b>tryToLogout</b>  </a></td><td class="numi">1</td><td>1482084949981</td><td class="numi">1702</td></tr>
 </table>
 <h1>Surefire test</h1>
-<h2 id="m1">AdminActionsTest:writeCommentNegative</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>_(*&apos;jhg</td>
-<td>1</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="2">
-<p>Unable to locate element: #wp\-admin\-bar\-site\-name
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
-System info: host: &apos;shukal-K73TK&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_111&apos;
-Driver info: org.openqa.selenium.firefox.MarionetteDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, appBuildId=20160606114238, version=, platform=LINUX, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0, platformVersion=4.2.0-42-generic, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Linux, device=desktop}]
-Session ID: 24452005-9c84-4cee-9a1f-3c8cb9345e56
-*** Element info: {Using=id, value=wp-admin-bar-site-name}</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
-<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-<br/>at AdminActionsTest.writeCommentNegative(AdminActionsTest.java:124)
-<br/>29 lines not shown
-</td></tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">AdminActionsTest:doSearchNegative</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>_(*&apos;jhg</td>
-<td>1</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="2">
-<p>Unable to locate element: #wp\-admin\-bar\-site\-name
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
-System info: host: &apos;shukal-K73TK&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_111&apos;
-Driver info: org.openqa.selenium.firefox.MarionetteDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, appBuildId=20160606114238, version=, platform=LINUX, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0, platformVersion=4.2.0-42-generic, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Linux, device=desktop}]
-Session ID: 00fcfac3-6d5d-48f3-8e1c-c8d0956aa2a0
-*** Element info: {Using=id, value=wp-admin-bar-site-name}</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
-<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-<br/>at AdminActionsTest.doSearchNegative(AdminActionsTest.java:135)
-<br/>29 lines not shown
-</td></tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">AdminActionsTest:writePostNegative</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>_(*&apos;jhg</td>
-<td>1</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="2">
-<p>Unable to locate element: #menu\-pages
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
-System info: host: &apos;shukal-K73TK&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_111&apos;
-Driver info: org.openqa.selenium.firefox.MarionetteDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, appBuildId=20160606114238, version=, platform=LINUX, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0, platformVersion=4.2.0-42-generic, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Linux, device=desktop}]
-Session ID: 7881ed82-0238-4cf5-ac3a-c6aa9d484155
-*** Element info: {Using=id, value=menu-pages}</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
-<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
-<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-<br/>at AdminActionsTest.writePostNegative(AdminActionsTest.java:112)
-<br/>29 lines not shown
-</td></tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">LoginTest:tryToLoginPositive</h2>
+<h2 id="m1">AdminActionsTest:writePost</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>shukal</td>
@@ -153,7 +49,9 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">AdminActionsTest:writeCommentPositive</h2>
+<h2 id="m2">GuestActionsTest:doSearch</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">LoginTest:tryToLogout</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>shukal</td>
@@ -161,7 +59,23 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">GuestActionsTest:doSearch</h2>
+<h2 id="m4">AdminActionsTest:doSearch</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>shukal</td>
+<td>RsVSY%ztGWe)Ezmed1mMMc</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">LoginTest:tryToLoginPositive</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>shukal</td>
+<td>RsVSY%ztGWe)Ezmed1mMMc</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">GuestActionsTest:writeComment</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m7">LoginTest:tryToLoginNegative</h2>
 <table cellspacing="0" cellpadding="0" class="result">
@@ -171,22 +85,12 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m8">AdminActionsTest:doSearchPositive</h2>
+<h2 id="m8">AdminActionsTest:writeComment</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
 <tr class="param stripe"><td>shukal</td>
 <td>RsVSY%ztGWe)Ezmed1mMMc</td>
 </tr>
 </table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m9">AdminActionsTest:writePostPositive</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>shukal</td>
-<td>RsVSY%ztGWe)Ezmed1mMMc</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m10">GuestActionsTest:writeComment</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

@@ -40,7 +40,8 @@ public class GuestActionsTest {
         driver.findElement(By.id("search-2"));
         driver.findElement(By.className("search-field")).sendKeys("Hello");
         driver.findElement(By.className("search-submit")).click();
-        WebElement results = driver.findElement(By.cssSelector("#post-27 > header:nth-child(1) > h2:nth-child(1)"));
+        WebElement results = driver.findElement(By.cssSelector("#post-52 > header:nth-child(1) > h2:nth-child(1) " +
+                "> a:nth-child(1)"));
         Assert.assertTrue(results.getText().contains("Hello"));
     }
 

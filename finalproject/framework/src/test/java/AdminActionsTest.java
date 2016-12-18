@@ -55,7 +55,7 @@ public class AdminActionsTest {
     }
 
     @Test(dataProvider = "Correct login")
-    public void writePostPositive(String username, String pass) throws Exception {
+    public void writePost(String username, String pass) throws Exception {
         driver.findElement(By.id("user_login")).sendKeys(username);
         driver.findElement(By.id("user_pass")).sendKeys(pass);
         driver.findElement(By.id("wp-submit")).click();
@@ -63,7 +63,7 @@ public class AdminActionsTest {
         driver.get("http://localhost:8888/wp-admin/post-new.php");
         driver.findElement(By.id("title")).sendKeys("HelloWorld2");
         driver.findElement(By.id("publish")).click();
-        driver.get("http://localhost:8888/?p=44");
+        driver.get("http://localhost:8888/?p=46");
         WebElement post = driver.findElement(By.cssSelector(".entry-title"));
         Assert.assertTrue(post.getText().contains("HelloWorld2"));
     }
@@ -90,7 +90,8 @@ public class AdminActionsTest {
         driver.findElement(By.id("search-2"));
         driver.findElement(By.className("search-field")).sendKeys("Hello");
         driver.findElement(By.className("search-submit")).click();
-        WebElement results = driver.findElement(By.cssSelector("#post-27 > header:nth-child(1) > h2:nth-child(1)"));
+        WebElement results = driver.findElement(By.cssSelector("#post-52 > header:nth-child(1) > h2:nth-child(1) " +
+                "> a:nth-child(1)"));
         Assert.assertTrue(results.getText().contains("Hello"));
     }
 

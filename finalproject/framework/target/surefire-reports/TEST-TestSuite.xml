@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="51.021" tests="10" errors="0" skipped="0" failures="3">
+<testsuite name="TestSuite" time="25.597" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -58,148 +58,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="doSearchNegative" classname="AdminActionsTest" time="10.965">
-    <failure message="Unable to locate element: #wp\-admin\-bar\-site\-name&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;&#10;System info: host: &apos;shukal-K73TK&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.firefox.MarionetteDriver&#10;Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, appBuildId=20160606114238, version=, platform=LINUX, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0, platformVersion=4.2.0-42-generic, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Linux, device=desktop}]&#10;Session ID: 00fcfac3-6d5d-48f3-8e1c-c8d0956aa2a0&#10;*** Element info: {Using=id, value=wp-admin-bar-site-name}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: #wp\-admin\-bar\-site\-name
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'shukal-K73TK', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.2.0-42-generic', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.MarionetteDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, appBuildId=20160606114238, version=, platform=LINUX, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0, platformVersion=4.2.0-42-generic, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Linux, device=desktop}]
-Session ID: 00fcfac3-6d5d-48f3-8e1c-c8d0956aa2a0
-*** Element info: {Using=id, value=wp-admin-bar-site-name}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at AdminActionsTest.doSearchNegative(AdminActionsTest.java:135)
-</failure>
-    <system-out><![CDATA[Configuring TestNG with: TestNG652Configurator
-]]></system-out>
-    <system-err><![CDATA[1481996508689	geckodriver	INFO	Listening on 127.0.0.1:4349
-Dec 17, 2016 8:41:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-1481996508965	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.aIqqpaJYrMIC
-1481996508967	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
-1481996508977	geckodriver::marionette	INFO	Connecting to Marionette on localhost:44402
-1481996510674	Marionette	INFO	Listening on port 44402
-Dec 17, 2016 8:41:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-
-(firefox:13619): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
-
-(firefox:13619): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
-
-(firefox:13619): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
-
-(firefox:13619): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
-JavaScript warning: https://normandy.cdn.mozilla.net/static/bundles/selfrepair-133d4d7c9de72117ee8e.24ec5279eef1.js, line 7: mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
-]]></system-err>
-  </testcase>
-  <testcase name="doSearchPositive" classname="AdminActionsTest" time="3.433"/>
-  <testcase name="writeCommentNegative" classname="AdminActionsTest" time="11.198">
-    <failure message="Unable to locate element: #wp\-admin\-bar\-site\-name&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;&#10;System info: host: &apos;shukal-K73TK&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.firefox.MarionetteDriver&#10;Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, appBuildId=20160606114238, version=, platform=LINUX, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0, platformVersion=4.2.0-42-generic, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Linux, device=desktop}]&#10;Session ID: 24452005-9c84-4cee-9a1f-3c8cb9345e56&#10;*** Element info: {Using=id, value=wp-admin-bar-site-name}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: #wp\-admin\-bar\-site\-name
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'shukal-K73TK', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.2.0-42-generic', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.MarionetteDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, appBuildId=20160606114238, version=, platform=LINUX, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0, platformVersion=4.2.0-42-generic, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Linux, device=desktop}]
-Session ID: 24452005-9c84-4cee-9a1f-3c8cb9345e56
-*** Element info: {Using=id, value=wp-admin-bar-site-name}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at AdminActionsTest.writeCommentNegative(AdminActionsTest.java:124)
-</failure>
-    <system-err><![CDATA[1481996536691	geckodriver	INFO	Listening on 127.0.0.1:5842
-Dec 17, 2016 8:42:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-1481996536718	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.oNFZ72mmIRXz
-1481996536743	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
-1481996536753	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37053
-1481996538453	Marionette	INFO	Listening on port 37053
-Dec 17, 2016 8:42:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-
-(firefox:13798): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
-
-(firefox:13798): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
-
-(firefox:13798): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
-
-(firefox:13798): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
-JavaScript warning: https://normandy.cdn.mozilla.net/static/bundles/selfrepair-133d4d7c9de72117ee8e.24ec5279eef1.js, line 7: mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
-]]></system-err>
-  </testcase>
-  <testcase name="writeCommentPositive" classname="AdminActionsTest" time="4.218"/>
-  <testcase name="writePostNegative" classname="AdminActionsTest" time="11.055">
-    <failure message="Unable to locate element: #menu\-pages&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;&#10;System info: host: &apos;shukal-K73TK&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-42-generic&apos;, java.version: &apos;1.8.0_111&apos;&#10;Driver info: org.openqa.selenium.firefox.MarionetteDriver&#10;Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, appBuildId=20160606114238, version=, platform=LINUX, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0, platformVersion=4.2.0-42-generic, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Linux, device=desktop}]&#10;Session ID: 7881ed82-0238-4cf5-ac3a-c6aa9d484155&#10;*** Element info: {Using=id, value=menu-pages}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: Unable to locate element: #menu\-pages
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'shukal-K73TK', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.2.0-42-generic', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.MarionetteDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, appBuildId=20160606114238, version=, platform=LINUX, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=47.0, platformVersion=4.2.0-42-generic, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Linux, device=desktop}]
-Session ID: 7881ed82-0238-4cf5-ac3a-c6aa9d484155
-*** Element info: {Using=id, value=menu-pages}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at AdminActionsTest.writePostNegative(AdminActionsTest.java:112)
-</failure>
-    <system-err><![CDATA[1481996565315	geckodriver	INFO	Listening on 127.0.0.1:16288
-Dec 17, 2016 8:42:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-1481996565336	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.X1JNDFwhht0g
-1481996565338	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
-1481996565346	geckodriver::marionette	INFO	Connecting to Marionette on localhost:45123
-1481996567077	Marionette	INFO	Listening on port 45123
-Dec 17, 2016 8:42:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-
-(firefox:13972): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
-
-(firefox:13972): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
-
-(firefox:13972): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
-
-(firefox:13972): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
-JavaScript warning: https://normandy.cdn.mozilla.net/static/bundles/selfrepair-133d4d7c9de72117ee8e.24ec5279eef1.js, line 7: mutating the [[Prototype]] of an object will cause your code to run very slowly; instead create the object with the correct initial [[Prototype]] value using Object.create
-]]></system-err>
-  </testcase>
-  <testcase name="writePostPositive" classname="AdminActionsTest" time="5.778"/>
-  <testcase name="doSearch" classname="GuestActionsTest" time="1.459"/>
-  <testcase name="writeComment" classname="GuestActionsTest" time="1.023"/>
-  <testcase name="tryToLoginNegative" classname="LoginTest" time="0.909"/>
-  <testcase name="tryToLoginPositive" classname="LoginTest" time="0.983"/>
+  <testcase name="doSearch" classname="AdminActionsTest" time="4.138"/>
+  <testcase name="writeComment" classname="AdminActionsTest" time="4.746"/>
+  <testcase name="writePost" classname="AdminActionsTest" time="8.418"/>
+  <testcase name="doSearch" classname="GuestActionsTest" time="1.542"/>
+  <testcase name="writeComment" classname="GuestActionsTest" time="1.23"/>
+  <testcase name="tryToLoginNegative" classname="LoginTest" time="1.224"/>
+  <testcase name="tryToLoginPositive" classname="LoginTest" time="2.598"/>
+  <testcase name="tryToLogout" classname="LoginTest" time="1.701"/>
 </testsuite>
