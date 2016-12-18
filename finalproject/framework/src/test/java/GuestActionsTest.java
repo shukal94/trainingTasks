@@ -1,6 +1,8 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.MarionetteDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -12,11 +14,10 @@ import java.util.concurrent.TimeUnit;
  */
 public class GuestActionsTest {
     private WebDriver driver;
-    private final String PATH = "/home/shukal/IdeaProjects/finalproject/credentials.xml";
+    private String currentDir = System.getProperty("user.dir");
 
     @BeforeMethod
     public void setUp() {
-        String currentDir = System.getProperty("user.dir");
         String marionetteDriverLocation = currentDir + "/geckodriver";
         System.setProperty("webdriver.gecko.driver", marionetteDriverLocation);
         driver = new MarionetteDriver();
@@ -29,6 +30,8 @@ public class GuestActionsTest {
         driver.get("http://localhost:8888/?p=1");
         driver.findElement(By.id("comment")).sendKeys("Ho-ho-ho!!!");
         driver.findElement(By.id("submit")).click();
+        WebElement content = driver.findElement(By.cssSelector("#div-comment-5 > div:nth-child(2)"));
+        Assert.assertTrue(content.getText().contains("Ho-ho-ho!!!"));
     }
 
     @Test
@@ -37,6 +40,8 @@ public class GuestActionsTest {
         driver.findElement(By.id("search-2"));
         driver.findElement(By.className("search-field")).sendKeys("Hello");
         driver.findElement(By.className("search-submit")).click();
+        WebElement results = driver.findElement(By.cssSelector("#post-27 > header:nth-child(1) > h2:nth-child(1)"));
+        Assert.assertTrue(results.getText().contains("Hello"));
     }
 
     @AfterMethod

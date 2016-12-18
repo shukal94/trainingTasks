@@ -1,6 +1,8 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.MarionetteDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -20,14 +22,13 @@ import java.util.concurrent.TimeUnit;
 public class AdminActionsTest {
     private WebDriver driver;
     private final String CORRECT = "correct";
-    private final String INCORRECT = "incorrect";
     private final String USERNAME = "username";
     private final String PASS = "password";
-    private final String PATH = "/home/shukal/IdeaProjects/finalproject/credentials.xml";
+    private String currentDir = System.getProperty("user.dir");
+    private final String PATH = currentDir + "/credentials.xml";
 
     @BeforeMethod
     public void setUp() {
-        String currentDir = System.getProperty("user.dir");
         String marionetteDriverLocation = currentDir + "/geckodriver";
         System.setProperty("webdriver.gecko.driver", marionetteDriverLocation);
         driver = new MarionetteDriver();
@@ -59,24 +60,29 @@ public class AdminActionsTest {
         driver.findElement(By.id("user_pass")).sendKeys(pass);
         driver.findElement(By.id("wp-submit")).click();
         driver.findElement(By.id("menu-pages")).click();
-        driver.get("http://localhost:8888/wp-admin/post-new.php?post_type=page");
+        driver.get("http://localhost:8888/wp-admin/post-new.php");
         driver.findElement(By.id("title")).sendKeys("HelloWorld2");
         driver.findElement(By.id("publish")).click();
+        driver.get("http://localhost:8888/?p=44");
+        WebElement post = driver.findElement(By.cssSelector(".entry-title"));
+        Assert.assertTrue(post.getText().contains("HelloWorld2"));
     }
 
     @Test(dataProvider = "Correct login")
-    public void writeCommentPositive(String username, String pass) {
+    public void writeComment(String username, String pass) {
         driver.findElement(By.id("user_login")).sendKeys(username);
         driver.findElement(By.id("user_pass")).sendKeys(pass);
         driver.findElement(By.id("wp-submit")).click();
         driver.findElement(By.id("wp-admin-bar-site-name")).click();
         driver.get("http://localhost:8888/?p=1");
-        driver.findElement(By.id("comment")).sendKeys("Ho-ho-ho!!!");
+        driver.findElement(By.id("comment")).sendKeys("fdvdfg");
         driver.findElement(By.id("submit")).click();
+        WebElement content = driver.findElement(By.cssSelector("#div-comment-6 > div:nth-child(2) > p:nth-child(1)"));
+        Assert.assertTrue(content.getText().contains("fdvdfg"));
     }
 
     @Test(dataProvider = "Correct login")
-    public void doSearchPositive(String username, String pass) {
+    public void doSearch(String username, String pass) {
         driver.findElement(By.id("user_login")).sendKeys(username);
         driver.findElement(By.id("user_pass")).sendKeys(pass);
         driver.findElement(By.id("wp-submit")).click();
@@ -84,60 +90,9 @@ public class AdminActionsTest {
         driver.findElement(By.id("search-2"));
         driver.findElement(By.className("search-field")).sendKeys("Hello");
         driver.findElement(By.className("search-submit")).click();
+        WebElement results = driver.findElement(By.cssSelector("#post-27 > header:nth-child(1) > h2:nth-child(1)"));
+        Assert.assertTrue(results.getText().contains("Hello"));
     }
-
-    @DataProvider(name = "Incorrect login")
-    public Object[][] incorrectLogin() throws Exception {
-        File inputFile = new File(PATH);
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        DocumentBuilder builder = factory.newDocumentBuilder();
-        Document document = builder.parse(inputFile);
-        NodeList nodeList = document.getElementsByTagName(INCORRECT);
-        Object[][] result = new Object[nodeList.getLength()][];
-        for (int i = 0; i < nodeList.getLength(); i++) {
-            NamedNodeMap map = nodeList.item(i).getAttributes();
-            result[i] = new Object[]{
-                    map.getNamedItem(USERNAME).getNodeValue(),
-                    map.getNamedItem(PASS).getNodeValue(),
-            };
-        }
-        return result;
-    }
-
-    @Test(dataProvider = "Incorrect login")
-    public void writePostNegative(String username, String pass) throws Exception {
-        driver.findElement(By.id("user_login")).sendKeys(username);
-        driver.findElement(By.id("user_pass")).sendKeys(pass);
-        driver.findElement(By.id("wp-submit")).click();
-        driver.findElement(By.id("menu-pages")).click();
-        driver.get("http://localhost:8888/wp-admin/post-new.php?post_type=page");
-        driver.findElement(By.id("title")).sendKeys("HelloWorld2");
-        driver.findElement(By.id("publish")).click();
-
-    }
-
-    @Test(dataProvider = "Incorrect login")
-    public void writeCommentNegative(String username, String pass) {
-        driver.findElement(By.id("user_login")).sendKeys(username);
-        driver.findElement(By.id("user_pass")).sendKeys(pass);
-        driver.findElement(By.id("wp-submit")).click();
-        driver.findElement(By.id("wp-admin-bar-site-name")).click();
-        driver.get("http://localhost:8888/?p=2");
-        driver.findElement(By.id("comment")).sendKeys("Ho-ho-ho!!!");
-        driver.findElement(By.id("submit")).click();
-    }
-
-    @Test(dataProvider = "Incorrect login")
-    public void doSearchNegative(String username, String pass) {
-        driver.findElement(By.id("user_login")).sendKeys(username);
-        driver.findElement(By.id("user_pass")).sendKeys(pass);
-        driver.findElement(By.id("wp-submit")).click();
-        driver.findElement(By.id("wp-admin-bar-site-name")).click();
-        driver.findElement(By.id("search-2"));
-        driver.findElement(By.className("search-field")).sendKeys("Hello");
-        driver.findElement(By.className("search-submit")).click();
-    }
-
 
     @AfterMethod
     public void close() {

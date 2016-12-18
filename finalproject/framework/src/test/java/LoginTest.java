@@ -1,6 +1,8 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.MarionetteDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -23,11 +25,11 @@ public class LoginTest {
     private final String INCORRECT = "incorrect";
     private final String USERNAME = "username";
     private final String PASS = "password";
-    private final String PATH = "/home/shukal/IdeaProjects/finalproject/credentials.xml";
+    private String currentDir = System.getProperty("user.dir");
+    private final String PATH = currentDir + "/credentials.xml";
 
     @BeforeMethod
     public void setUp() {
-        String currentDir = System.getProperty("user.dir");
         String marionetteDriverLocation = currentDir + "/geckodriver";
         System.setProperty("webdriver.gecko.driver", marionetteDriverLocation);
         driver = new MarionetteDriver();
@@ -58,11 +60,24 @@ public class LoginTest {
         driver.findElement(By.id("user_login")).sendKeys(username);
         driver.findElement(By.id("user_pass")).sendKeys(pass);
         driver.findElement(By.id("wp-submit")).click();
+        WebElement message = driver.findElement(By.xpath(".//*[@id='wp-admin-bar-my-account']/a"));
+        Assert.assertTrue(message.getText().contains("Howdy, " + username));
+    }
+
+    @Test(dataProvider = "Correct login")
+    public void tryToLogout(String username, String pass) throws Exception {
+        driver.findElement(By.id("user_login")).sendKeys(username);
+        driver.findElement(By.id("user_pass")).sendKeys(pass);
+        driver.findElement(By.id("wp-submit")).click();
+        driver.get("http://localhost:8888/wp-login.php?action=logout&_wpnonce=ac0fd92c45");
+        driver.findElement(By.linkText("log out")).click();
+        WebElement message = driver.findElement(By.className("message"));
+        Assert.assertTrue(message.getText().contains("You are now logged out."));
     }
 
 
     @DataProvider(name = "Incorrect login")
-    public Object[][] inCorrectLogin() throws Exception {
+    public Object[][] incorrectLogin() throws Exception {
         File inputFile = new File(PATH);
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
@@ -84,6 +99,8 @@ public class LoginTest {
         driver.findElement(By.id("user_login")).sendKeys(username);
         driver.findElement(By.id("user_pass")).sendKeys(pass);
         driver.findElement(By.id("wp-submit")).click();
+        WebElement message = driver.findElement(By.cssSelector("#login_error"));
+        Assert.assertTrue(message.getText().contains("Invalid username."));
     }
 
     @AfterMethod
