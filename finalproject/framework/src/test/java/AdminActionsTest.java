@@ -70,11 +70,12 @@ public class AdminActionsTest {
 
     @Test(dataProvider = "Correct login")
     public void writeComment(String username, String pass) {
+        TimeUnit.SECONDS.sleep(5);
         driver.findElement(By.id("user_login")).sendKeys(username);
         driver.findElement(By.id("user_pass")).sendKeys(pass);
         driver.findElement(By.id("wp-submit")).click();
         driver.findElement(By.id("wp-admin-bar-site-name")).click();
-        driver.get("http://localhost:8888/?p=1");
+        driver.get("http://localhost:8888/?p=2");
         driver.findElement(By.id("comment")).sendKeys("fdvdfg");
         driver.findElement(By.id("submit")).click();
         WebElement content = driver.findElement(By.cssSelector("#div-comment-6 > div:nth-child(2) > p:nth-child(1)"));
